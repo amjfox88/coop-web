@@ -1,0 +1,17 @@
+.banner {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  align-items: center;
+  background-color: #121473;
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: cover;
+  padding: 0 120px;
+}
+
+.title {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}

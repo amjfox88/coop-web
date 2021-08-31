@@ -1,0 +1,17 @@
+.header {
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 20px 0;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-blue);
+}
+.nav a{
+  margin-right: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}

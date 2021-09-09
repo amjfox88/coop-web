@@ -1,0 +1,36 @@
+.contentImage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 130px 120px;
+}
+.contentImage.reverse .textBox{
+  grid-area: 1 / 2 / 1 / 2;
+}
+.contentImage.reverse .imgBox{
+  grid-area: 1 / 1 / 1 / 1;
+}
+.contentImage .textBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+}
+
+.contentImage .imgBox {
+  max-width: 80%;
+  justify-self: center;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--dark-blue);
+  font-weight: 600;
+  margin: 0;
+}
+
+.text {
+  font-size: 18px;
+  color: var(--dark-blue);
+  font-weight: 500;
+  line-height: 32px;
+}

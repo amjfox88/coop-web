@@ -18,12 +18,27 @@
 
 html,
 body {
-  padding: 0 50px;
+  padding: 0 0;
   margin: 0;
 }
 body {
   font-family: 'Avenir', Roboto, serif;
   -webkit-font-smoothing: antialiased;
+  padding: 0 100px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--dark-blue);
+}
+
+p {
+  font-size: 18px;
+  color: var(--dark-blue);
+  font-weight: 500;
+  line-height: 32px;
 }
 
 a {
@@ -31,6 +46,42 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.titleContent {
+  padding: 120px 140px;
+}
+.titleContent .center {
+  text-align: center;
+}
+.titleContent.blueContent {
+  background-color: var(--blue);
+}
+.titleContent.blueContent, .titleContent.blueContent p, .titleContent.blueContent h2 {
+  color: #fff;
+}
+
+.react-reveal div{
+  height: 100%;
+}
+
+.react-reveal{
+  height: 100%;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner-cta{
+  margin-top: 100px;
 }

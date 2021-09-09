@@ -18,7 +18,8 @@ export default function Banner(props) {
           </Fade>
           }
         </div>
-        <div className="right">
+        <div className={styles.right}>
+          {props.children}
         </div>
       </section>
   )

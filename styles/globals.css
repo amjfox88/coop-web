@@ -25,6 +25,7 @@ body {
   font-family: 'Avenir', Roboto, serif;
   -webkit-font-smoothing: antialiased;
   padding: 0 100px;
+  background-color: var(--coop-white);
 }
 
 h2 {
@@ -59,8 +60,11 @@ ul {
 .titleContent {
   padding: 120px 140px;
 }
-.titleContent .center {
+.titleContent.center {
   text-align: center;
+}
+.titleContent .title {
+  /*padding: 0 100px;*/
 }
 .titleContent.blueContent {
   background-color: var(--blue);

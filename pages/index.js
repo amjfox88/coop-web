@@ -36,7 +36,7 @@ function Home({services}) {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc.</p>
           </Fade>
         </section>
-        <section className={styles.contentBoxes}>
+        <section className="titleContent">
           <ContentImage reverse={false} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
         </section>
         <section className={styles.titleContent}>
@@ -44,7 +44,7 @@ function Home({services}) {
             <h2>¿Cómo entendemos la salud integral dentro de una empresa?</h2>
           </Fade>
         </section>
-        <section className={styles.contentBoxes}>
+        <section className="titleContent">
           <ContentImage reverse={false} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
           <ContentImage reverse={true} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
           <ContentImage reverse={false} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />

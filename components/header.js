@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/sobre-nosotros">
             <a>Sobre nosotros</a>
           </Link>
-          <Link href="/contact">
+          <Link href="/smart-health-coach">
             <a>Smart health coach</a>
           </Link>
           <Link href="/blog">

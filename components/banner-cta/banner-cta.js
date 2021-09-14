@@ -12,15 +12,17 @@ export default function BannerCta(props) {
           <Fade bottom>
             <h2 className={styles.title}>{props.title}</h2>
           </Fade>
+          { props.text ? <Fade bottom>
+            <p className={styles.text}>{props.text}</p>
+          </Fade> : null}
           {props.cta ?
           <Fade bottom>
             <Button className={styles.button} url={props.cta.url} text={props.cta.text} size={"L"}/>
           </Fade> : ''
           }
-
-        <Link href={"/servicios"}>
-          <a className={styles.link}>{props.cta.link}</a>
-        </Link>
+        { props.link ? <Link href={props.link.url}>
+          <a className={styles.link}>{props.link.text}</a>
+        </Link> : null}
       </div>
   )
 }

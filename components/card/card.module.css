@@ -3,7 +3,7 @@
   height: 271px;
   background-color: var(--dark-blue);
   border-radius: 10px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;

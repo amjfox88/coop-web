@@ -1,0 +1,67 @@
+.formData, .formAdditionalData {
+  display: grid;
+  grid-gap: 20px
+}
+.formData {
+  grid-template-columns: 1fr 1fr;
+}
+.formAdditionalData {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: var(--dark-blue)
+}
+.form > div {
+  margin-bottom: 40px;
+}
+.form input, .form select {
+  border: 1px solid #262AF2;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 100%;
+  outline: none;
+}
+.form textarea{
+  min-height: 200px;
+  width: 100%;
+  border: 1px solid #262AF2;
+  border-radius: 10px;
+  padding: 20px 15px;
+  outline: none;
+  margin-bottom: 40px;
+}
+.submitButton {
+  display: grid;
+  grid-template-columns: 1fr 264px 1fr;
+  margin-top: 60px;
+}
+.form .submitButton input[type="submit"] {
+  background-color: #262AF2;
+  opacity: 0.6;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 100px;
+  grid-area: 1 / 2;
+  cursor: pointer;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+}
+.form .terms input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.terms a{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}

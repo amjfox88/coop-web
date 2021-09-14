@@ -3,11 +3,14 @@
   grid-template-columns: 60% 1fr;
   grid-template-rows: 80vh;
   align-items: center;
-  background-color: #121473;
   background-blend-mode: lighten;
   background-position: center;
   background-size: cover;
   padding: 0 120px;
+}
+
+.banner.light .title{
+  color: var(--dark-blue)
 }
 
 .title {

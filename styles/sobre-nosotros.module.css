@@ -1,0 +1,27 @@
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 20px));
+  grid-gap: 20px;
+  place-items: center;
+  place-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+.tabList {
+  border-bottom: 1px solid #121473;
+}
+.tabList li {
+  font-size: 24px;
+  margin-right: 32px;
+  padding: 0;
+  padding-bottom: 8px;
+  outline: none;
+}
+
+.tabList li[aria-selected="true"] {
+  font-weight: bold;
+}
+.coopTab {
+  display: inline-block;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.postsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 224px);
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  grid-gap: 20px;
+}
+.postsList li {
+  display: inline-block;
+}
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleContainer a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.titleContainer a .icon{
+  margin-left: 16px;
+}
+.title {
+  margin-bottom: 80px;
+}
+.title:last-of-type{
+  margin-top: 67px;
+}

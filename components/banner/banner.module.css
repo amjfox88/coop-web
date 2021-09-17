@@ -15,8 +15,9 @@
 
 .title {
   font-size: 80px;
-  color: white;
+  font-family: 'SF Pro Display';
   font-weight: bold;
+  color: white;
 }
 .right {
   height: 100%;

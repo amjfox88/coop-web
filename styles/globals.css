@@ -1,19 +1,17 @@
 @import 'colors.css';
 
 @font-face {
-  font-family: 'Avenir';
+  font-family: 'SF Pro Display';
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: local('Avenir'), url(/fonts/AvenirNextLTPro-Regular.ttf) format('truetype');
+  src: local('SF Pro Display'), url(/fonts/SFPRODISPLAYREGULAR.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Avenir bold';
+  font-family: 'SF Pro Text';
   font-style: normal;
-  font-weight: 600;
   font-display: swap;
-  src: local('Avenir bold'), url(/fonts/AvenirNextLTPro-Bold.ttf) format('truetype');
+  src: local('SF Pro Text'), url(/fonts/FontsFree-Net-SFProText-Regular.ttf) format('truetype');
 }
 
 html,
@@ -21,18 +19,38 @@ body {
   padding: 0 0;
   margin: 0;
 }
+
 body {
-  font-family: 'Avenir', Roboto, serif;
+  font-family: 'SF Pro Text';
   -webkit-font-smoothing: antialiased;
   padding: 0 100px;
   background-color: var(--coop-white);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'SF Pro Display';
 }
 
 h2 {
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
+  letter-spacing: 0.01em;
   color: var(--dark-blue);
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+  font-size: 20px;
+  color: var(--dark-blue);
+  margin-bottom: 8px;
+}
+h6 {
+
 }
 
 p {
@@ -43,7 +61,7 @@ p {
 }
 
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
 }
 

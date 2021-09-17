@@ -5,11 +5,29 @@ import mobileImg from "../public/images/iphoneX.svg";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
+import axios from 'axios';
 
 export default function Demo() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(watch("example"));
+
+  async function onSubmit(data) {
+
+    let config = {
+      method: 'post',
+      url: `${process.env.NEXT_PUBLIC_PUBLIC_API_URL}/api/contact`,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data
+    }
+
+    try {
+      await axios(config)
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   return (
       <>
         <Banner
@@ -22,27 +40,46 @@ export default function Demo() {
           </Fade>
         </Banner>
         <section className="titleContent">
-          <h3>Formulario de contacto</h3>
+          <h2 className={styles.title}>Formulario de contacto</h2>
           <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <div className={styles.formData}>
               <div>
                 <label htmlFor="name" className={styles.label}>Nombre*</label>
-                <input  {...register("name")} />
+                <input {...register("name", {required: {
+                    value: true,
+                    message: 'Debes escribir tu nombre'
+                  }})} />
+                {errors.name && <span>{errors?.name?.message}</span>}
               </div>
 
               <div>
-                <label htmlFor="secondName" className={styles.label}>Apellido*</label>
-                <input {...register("exampleRequired", { required: true })} />
+                <label htmlFor="secondName" className={styles.label}>Apellido*</label>{errors.secondName && <span className={styles.error}>{errors?.secondName?.message}</span>}
+                <input {...register("secondName", {required: {
+                    value: true,
+                    message: 'Debes escribir tu apellido'
+                  }})} />
               </div>
 
               <div>
                 <label htmlFor="company" className={styles.label}>Empresa*</label>
-                <input {...register("company")} />
+                <input {...register("company", {required: {
+                    value: true,
+                    message: 'Necesitamos una empresa'
+                  }})} />
               </div>
 
               <div>
-                <label htmlFor="companyEmail" className={styles.label}>Email de empresa*</label>
-                <input {...register("companyEmail", { required: true })} />
+                <label htmlFor="companyEmail" className={styles.label}>Email de empresa*</label>{errors.companyEmail && <span className={styles.error}>{errors?.companyEmail?.message}</span>}
+                <input type="email" {...register("companyEmail", {
+                  required: {
+                    value: true,
+                    message: 'Necesitamos un correo válido'
+                  },
+                  pattern: {
+                    value: /^[a-zA-Z0-9_.+-]+@(?!(gmail|yahoo|outlook|hotmail)).*\.[a-zA-Z]{2,6}$/,
+                    message: 'Necesitamos un correo de empresa'
+                  }
+                })} />
               </div>
             </div>
             <div className={styles.formAdditionalData}>
@@ -53,7 +90,16 @@ export default function Demo() {
 
               <div>
                 <label htmlFor="phone" className={styles.label}>Teléfono*</label>
-                <input {...register("phone", { required: true })} />
+                <input {...register("phone", {
+                  required: {
+                    value: true,
+                    message: 'Necesitamos un número de teléfono'
+                  },
+                  minLength: {
+                    value: 9,
+                    message: 'Necesitamos un número de teléfono válido'
+                  }
+                })} />
               </div>
 
               <div>
@@ -69,19 +115,25 @@ export default function Demo() {
 
             <div>
               <label htmlFor="message" className={styles.label}>Mensaje*</label>
-              <textarea {...register("message", { required: true })} />
-              <label className={styles.terms}>
-                <input type="checkbox" {...register("terms", { required: true })}/>
-                <span className={styles.checkmark}/>
-                <Link href={"/terms-and-conditions"}><a>Acepto los términos legales y consiento el envío de información.*</a></Link>
+              <textarea {...register("message", {
+                required: {
+                  value: true,
+                  message: 'Necesitamos que nos escribas tu consulta'
+                }
+              })} />
+              <label htmlFor="terms" className={styles.terms}>
+                <input type="checkbox" {...register("terms", { required: {
+                    value: true,
+                    message: 'Necesitamos que aceptes los términos'
+                  } })}/>
+                <Link href={"/terminos-y-condiciones"}><a>Acepto los términos legales y consiento el envío de información.*</a></Link>
+                {errors.terms && <span className={styles.error}>{errors?.terms?.message}</span>}
               </label>
 
             </div>
 
-            {errors.exampleRequired && <span>This field is required</span>}
-
             <div className={styles.submitButton}>
-              <input type="submit" />
+              <input className={styles.disabled} type="submit" value="Enviar"/>
             </div>
           </form>
         </section>

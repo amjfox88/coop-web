@@ -1,0 +1,9 @@
+.banner {
+  padding: 120px 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  color: white;
+  text-align: center;
+}

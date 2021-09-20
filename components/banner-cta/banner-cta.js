@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 export default function BannerCta(props) {
   const background = {
-    backgroundImage: 'url(' + props.backImage.src + ')',
+    backgroundImage: 'url(' + props.backImage + ')',
   };
   return (
       <div className={styles.banner} style={background}>

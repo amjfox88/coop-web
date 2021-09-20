@@ -29,6 +29,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'SF Pro Display';
+  color: var(--dark-blue);
 }
 
 h2 {
@@ -36,17 +37,16 @@ h2 {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.01em;
-  color: var(--dark-blue);
 }
 h3 {
-
+  font-size: 32px;
 }
 h4 {
-
+  font-size: 24px;
 }
 h5 {
   font-size: 20px;
-  color: var(--dark-blue);
+  font-weight: 600;
   margin-bottom: 8px;
 }
 h6 {
@@ -87,7 +87,7 @@ ul {
 .titleContent.blueContent {
   background-color: var(--blue);
 }
-.titleContent.blueContent, .titleContent.blueContent p, .titleContent.blueContent h2 {
+.titleContent.blueContent, .titleContent.blueContent p, .titleContent.blueContent h2, .titleContent.blueContent h4 {
   color: #fff;
 }
 

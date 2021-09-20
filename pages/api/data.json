@@ -1,0 +1,47 @@
+{
+  "employees": [
+    {
+      "name": "Nombre del experto1",
+      "position": "Cargo o aporte a la empresa",
+      "image": "/images/Communication.svg"
+    },
+    {
+      "name": "Nombre del experto2",
+      "position": "Cargo o aporte a la empresa",
+      "image": "/images/Communication.svg"
+    },
+    {
+      "name": "Nombre del experto3",
+      "position": "Cargo o aporte a la empresa",
+      "image": "/images/Communication.svg"
+    },
+    {
+      "name": "Nombre del experto4",
+      "position": "Cargo o aporte a la empresa",
+      "image": "/images/Communication.svg"
+    }
+
+  ],
+  "services": [
+    {
+      "title": "Diagnóstico y análisis",
+      "text": "El proceso arranca con un análisis del estado de la empresa en materia de salud y bienestar.",
+      "image": "/images/Communication.svg"
+    },
+    {
+      "title": "Acceso a materiales",
+      "text": "Coop pone a disposición del usuario un amplio catálogo de actividades online.",
+      "image": "/images/Media.svg"
+    },
+    {
+      "title": "Talleres presenciales",
+      "text": "Las actividades están disponibles bajo demanda para quien prefiere el cara a cara.",
+      "image": "/images/Virtual-Reality.svg"
+    },
+    {
+      "title": "Seguimiento y data",
+      "text": "Solo la recogida de información cualificada y su análisis nos permite implementar mejoras.",
+      "image": "/images/Management.svg"
+    }
+  ]
+}

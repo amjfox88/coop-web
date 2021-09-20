@@ -16,7 +16,7 @@ export default function ContentImage({title, priority, text, image, reverse}) {
         </div>
         <div className={styles.imgBox}>
           <Fade right={!reverse} left={reverse}>
-            <Image src={image} alt="image"/>
+            <Image src={image} alt="image" layout={"fill"} objectFit={"cover"}/>
           </Fade>
         </div>
       </div>

@@ -16,6 +16,11 @@
 .slideEmployee{
   text-align: left;
 }
+.slideImageContainer {
+  width: 467px;
+  height: 374px;
+  position: relative;
+}
 .employeeImage {
   background-color: var(--dark-blue);
   border-radius: 10px;
@@ -29,9 +34,7 @@
   font-size: 14px;
   margin: 0;
 }
-.pepe {
-  margin-bottom: 120px;
-}
+
 .services{
   list-style: none;
   margin: 80px 0;

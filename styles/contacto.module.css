@@ -1,0 +1,22 @@
+.emailInfo {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-items: center;
+  justify-content: center;
+}
+.emailInfo div:first-child {
+  padding: 0 100px;
+}
+
+.emailInfo:last-child{
+  display: flex;
+  justify-content: center;
+}
+
+.emailInfo p {
+  font-size: 14px;
+}
+.emailInfo a {
+  font-size: 24px;
+  font-weight: bold;
+}

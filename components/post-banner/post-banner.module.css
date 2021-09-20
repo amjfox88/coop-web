@@ -7,3 +7,6 @@
   color: white;
   text-align: center;
 }
+.banner.noBackground {
+  background-color: var(--dark-blue);
+}

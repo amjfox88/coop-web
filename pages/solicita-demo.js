@@ -1,14 +1,69 @@
 import Banner from "../components/banner/banner";
+import React, { useState, useEffect } from 'react';
 import styles from "../styles/demo.module.css";
 import Image from "next/image";
-import mobileImg from "../public/images/iphoneX.svg";
-import { useForm } from "react-hook-form";
+import {useForm, Controller} from "react-hook-form";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import axios from 'axios';
+import Select from 'react-select';
+
 
 export default function Demo() {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const {register, handleSubmit, control, formState: {errors}} = useForm();
+  
+  const options = [
+    { value: '0-10', label: '0-10' },
+    { value: '11-50', label: '11-50' },
+    { value: '51-250', label: '51-250' },
+    { value: 'Más de 250', label: 'Más de 250' }
+  ]
+
+  const selectStyles = {
+    control: (base,state) => ({
+      ...base,
+      border: '1',
+      borderColor: '#262AF2',
+      '&:hover': {
+        border: '1',
+        borderColor: '#262AF2'
+      },
+      fontSize: '14px',
+      padding: '13px 20px',
+      borderRadius: '10px',
+      boxShadow: 'none',
+      cursor: 'pointer',
+    }),
+    option: (provided,state) => ({
+      ...provided,
+      color: '#121473',
+      backgroundColor: state.isSelected ? "white" : "white",
+      ':active': {
+        backgroundColor: state.isSelected ? "white" : "white"
+      }
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: '#121473'
+    }),
+    menu: (provided) => ({
+      ...provided,
+      paddingTop: '20px',
+      borderRadius: '10px',
+      border: '1',
+      borderColor: '#262AF2',
+    }),
+    placeholder: () => ({
+      color: '#121473'
+    }),
+    dropdownIndicator: () => ({
+      color: '#121473',
+    }),
+    indicatorSeparator: () => ({
+      display: 'none'
+    })
+  }
+  const [count, setCount] = useState(0);
 
   async function onSubmit(data) {
 
@@ -28,15 +83,16 @@ export default function Demo() {
     }
   }
 
+
   return (
       <>
         <Banner
             title={"¿Interesado en conocer más sobre Coop? "}
-            text="Disfruta de una demostración gratuita de nuestras capacidades y descubre cómo podemos colaborar juntos a mejorar el bienestar y desempeño de tus empleados."
+            text="Disfruta de una demostración gratuita y personalizada, donde te explicaremos todos los detalles de la herramienta, y hablaremos de cómo sacarle partido para que cuanto antes puedas empezar a mejorar el bienestar y el desempeño de tus empleados. ¿Hablamos?"
             theme={'light'}
         >
           <Fade className={styles.fade} right>
-            <Image src={mobileImg} layout={"intrinsic"} />
+            <Image src={"/images/iphoneX.svg"} layout={"fill"}  objectFit={"contain"}/>
           </Fade>
         </Banner>
         <section className="titleContent">
@@ -45,31 +101,39 @@ export default function Demo() {
             <div className={styles.formData}>
               <div>
                 <label htmlFor="name" className={styles.label}>Nombre*</label>
-                <input {...register("name", {required: {
+                <input {...register("name", {
+                  required: {
                     value: true,
                     message: 'Debes escribir tu nombre'
-                  }})} />
+                  }
+                })} />
                 {errors.name && <span>{errors?.name?.message}</span>}
               </div>
 
               <div>
-                <label htmlFor="secondName" className={styles.label}>Apellido*</label>{errors.secondName && <span className={styles.error}>{errors?.secondName?.message}</span>}
-                <input {...register("secondName", {required: {
+                <label htmlFor="secondName" className={styles.label}>Apellido*</label>{errors.secondName &&
+              <span className={styles.error}>{errors?.secondName?.message}</span>}
+                <input {...register("secondName", {
+                  required: {
                     value: true,
                     message: 'Debes escribir tu apellido'
-                  }})} />
+                  }
+                })} />
               </div>
 
               <div>
                 <label htmlFor="company" className={styles.label}>Empresa*</label>
-                <input {...register("company", {required: {
+                <input {...register("company", {
+                  required: {
                     value: true,
                     message: 'Necesitamos una empresa'
-                  }})} />
+                  }
+                })} />
               </div>
 
               <div>
-                <label htmlFor="companyEmail" className={styles.label}>Email de empresa*</label>{errors.companyEmail && <span className={styles.error}>{errors?.companyEmail?.message}</span>}
+                <label htmlFor="companyEmail" className={styles.label}>Email de empresa*</label>{errors.companyEmail &&
+              <span className={styles.error}>{errors?.companyEmail?.message}</span>}
                 <input type="email" {...register("companyEmail", {
                   required: {
                     value: true,
@@ -85,7 +149,7 @@ export default function Demo() {
             <div className={styles.formAdditionalData}>
               <div>
                 <label htmlFor="position" className={styles.label}>Cargo*</label>
-                <input {...register("position", { required: true })} />
+                <input {...register("position", {required: true})} />
               </div>
 
               <div>
@@ -104,12 +168,26 @@ export default function Demo() {
 
               <div>
                 <label htmlFor="numberEmployees" className={styles.label}>Nº de empleados</label>
-                <select {...register("numberEmployees")}>
-                  <option value="0-10">0-10</option>
-                  <option value="11-50">11-50</option>
-                  <option value="51-250">51-250</option>
-                  <option value="more">Más de 250</option>
-                </select>
+                <Controller
+                    control={control}
+                    name="numberEmployees"
+                    render={({
+                       field: {onChange, onBlur, value, name, ref},
+                       fieldState: {invalid, isTouched, isDirty, error},
+                       formState,
+                   }) => (
+                      <Select
+                          id={"gender"}
+                          instanceId={"gender"}
+                          placeholder={'Seleccionar un rango'}
+                          styles={selectStyles}
+                          options={options}
+                          onChange={onChange}
+                          selected={value}
+                          inputRef={ref}
+                      />
+                  )}
+                />
               </div>
             </div>
 
@@ -119,14 +197,26 @@ export default function Demo() {
                 required: {
                   value: true,
                   message: 'Necesitamos que nos escribas tu consulta'
+                },
+                maxLength: {
+                  value: 500,
+                  message: 'No puedes escribir más de 500 caracteres'
                 }
-              })} />
+              })} onChange={(e) => {
+                setCount(e.target.value.length);
+              }} />
+              <span>{count}/500</span>
+
+
               <label htmlFor="terms" className={styles.terms}>
-                <input type="checkbox" {...register("terms", { required: {
+                <input type="checkbox" {...register("terms", {
+                  required: {
                     value: true,
                     message: 'Necesitamos que aceptes los términos'
-                  } })}/>
-                <Link href={"/terminos-y-condiciones"}><a>Acepto los términos legales y consiento el envío de información.*</a></Link>
+                  }
+                })}/>
+                <Link href={"/terminos-y-condiciones"}><a>Acepto los términos legales y consiento el envío de
+                  información.*</a></Link>
                 {errors.terms && <span className={styles.error}>{errors?.terms?.message}</span>}
               </label>
 

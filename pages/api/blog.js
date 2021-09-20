@@ -73,9 +73,11 @@ export async function getAllPostsWithSlug() {
       posts {
         nodes {
           slug
+          title
         }
       }
     }
   `)
+
   return data?.posts
 }

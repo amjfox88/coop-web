@@ -24,7 +24,7 @@ export default function Header() {
         </nav>
 
         <div>
-          <Button url={"/demo"} text={"Solicita una demo"} theme={""}/>
+          <Button url={"/solicita-demo"} text={"Solicita una demo"} theme={"light"}/>
         </div>
       </header>
   )

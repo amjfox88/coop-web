@@ -1,6 +1,6 @@
 .contentImage{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 45%;
   align-items: center;
   margin-bottom: 120px;
 }
@@ -15,6 +15,7 @@
 }
 .contentImage.reverse .imgBox{
   grid-area: 1 / 1 / 1 / 1;
+  justify-self: flex-start;
 }
 .contentImage .textBox {
   display: grid;
@@ -23,9 +24,15 @@
 }
 
 .contentImage .imgBox {
-  max-width: 80%;
-  justify-self: center;
+  width: 385px;
+  height: 374px;
+  justify-self: flex-end;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
 }
+
 
 .title {
   font-size: 48px;

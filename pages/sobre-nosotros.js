@@ -1,11 +1,8 @@
 import Banner from "../components/banner/banner";
 import CardDescription from "../components/card-description/card-description";
-import bannerImage from "../public/images/sobre-nosotros-banner.png";
-import Image from 'next/image'
 import Fade from "react-reveal/Fade";
 import styles from "../styles/sobre-nosotros.module.css";
 import BannerCta from "../components/banner-cta/banner-cta";
-import bannerCtaBackground from "../public/images/banner-cta-background.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -21,7 +18,7 @@ CustomTab.tabsRole = 'Tab'; // Required field to use your custom Tab
 export default function ComoFunciona() {
   return (
       <>
-        <Banner title={"Experiencia y conocimiento con propósito"} backImage={bannerImage} cta={{url: '/demo', text: 'Únete al equipo'}} />
+        <Banner title={"Experiencia y conocimiento con propósito"} backImage={"/images/sobre-nosotros-banner.png"} cta={{url: '/solicita-demo', text: 'Únete al equipo'}} />
         <section className="titleContent center">
           <Fade bottom>
             <h2>Un equipo preocupado y centrado en la salud integral de las personas</h2>
@@ -75,7 +72,7 @@ export default function ComoFunciona() {
               title={"¿Quieres unirte a nosotros?"}
               text={"Trabajamos con personas que realmente se preocupan. Coop Health está impulsado por una misión y es emprendedor, ofrecemos autonomía y potencial de crecimiento en un espacio verdaderamente transformador."}
               cta={{url: '/demo', text: 'Únete al equipo'}}
-              backImage={bannerCtaBackground}/>
+              backImage={"/images/banner-cta-background.svg"}/>
         </section>
       </>
   )

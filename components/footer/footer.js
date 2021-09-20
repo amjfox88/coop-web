@@ -6,8 +6,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import styles from './footer.module.css'
+import footerData from "/pages/api/footer.json";
 
-export default function Footer ({urls}) {
+export default function Footer () {
   return (
       <footer className={styles.footer}>
         <div className={styles.footerLeft}>
@@ -22,7 +23,7 @@ export default function Footer ({urls}) {
           <div className={styles.copyright}>© 2021 Coop Health. All rights reserved</div>
         </div>
         <div className={styles.linksColumns}>
-          {urls.map((col, index) => (
+          {footerData.map((col, index) => (
               <ul key={index} className={`column-${index+1}`}>
                 {col.map((link, index) => (
                     <li key={index}>

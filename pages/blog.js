@@ -2,16 +2,14 @@ import Banner from "../components/banner/banner";
 import PostCard from "../components/post-card/post-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons/faArrowCircleRight";
-import bannerImage from "../public/images/blog-banner.png";
 import styles from '/styles/blog.module.css'
-
 import {getNewsBlog} from './api/blog';
 import Link from "next/link";
 
-export default function Blog({news, posts}) {
+function Blog({news, posts}) {
   return (
       <>
-        <Banner title={"Noticias y publicaciones"} backImage={bannerImage}/>
+        <Banner title={"Noticias y publicaciones"} backImage={"/images/blog-banner.png"}/>
         <section className="titleContent">
           <div className={styles.titleContainer}>
             <h2 className={styles.title}>Noticias</h2>
@@ -36,7 +34,7 @@ export default function Blog({news, posts}) {
           }
           <div className={styles.titleContainer}>
             <h2 className={styles.title}>Publicaciones</h2>
-            <Link href={"/posts"}><a aria-label={"Publicaciones"}>Ver todas las publicaciones <FontAwesomeIcon icon={faArrowCircleRight} color={'#262AF2'} size={'lg'} className={styles.icon}/></a></Link>
+            <Link href={"/posts"}><a aria-label={"Publicaciones"}>Ver todas las publicaciones <FontAwesomeIcon icon={faArrowCircleRight} color={'#262AF2'} className={styles.icon}/></a></Link>
           </div>
           {
             posts.nodes.length && <ul className={styles.postsList}>
@@ -66,3 +64,5 @@ export async function getStaticProps() {
     props: {news, posts},
   }
 }
+
+export default Blog;

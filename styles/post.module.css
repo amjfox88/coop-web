@@ -1,0 +1,29 @@
+.navigation {
+  display: grid;
+  grid-template-areas: "prev next" ;
+  justify-content: space-between;
+}
+.prev {
+  grid-area: prev;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.next h5, .prev h5 {
+  margin: 0 0 16px;
+}
+.next {
+  grid-area: next;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+.next > div, .prev > div {
+  margin: 0 16px;
+}
+.icon {
+  font-size: 24px;
+}

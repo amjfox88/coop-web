@@ -1,23 +1,16 @@
 import Banner from "../components/banner/banner";
-import bannerImage from "../public/images/banner-como-funciona.svg";
-import mobileImg from "../public/images/iphoneX.svg";
 import Image from 'next/image'
 import Fade from "react-reveal/Fade";
-import styles from "../styles/Home.module.css";
-import bannerHome from "../public/images/banner-home.png";
 import ContentImage from "../components/content-image/content-image";
 import BannerCta from "../components/banner-cta/banner-cta";
-import bannerCtaBackground from "../public/images/banner-cta-background.svg";
 
 export default function ComoFunciona() {
   return (
       <>
-        <Banner title={"Un servicio integral 360º"} backImage={bannerImage} cta={{url: '/demo', text: 'Solicita una demo'}}>
-          <Fade className={styles.fade} right>
-            <Image src={mobileImg} layout={"intrinsic"} />
-          </Fade>
+        <Banner title={"Un servicio integral 360º"} backImage={"/images/banner-como-funciona.svg"} cta={{url: '/solicita-demo', text: 'Solicita una demo'}}>
+          <Image src={"/images/iphoneX.svg"} alt="Iphone X" layout={"fill"} objectFit={"contain"}/>
         </Banner>
-        <section className={styles.titleContent}>
+        <section className="titleContent">
           <Fade bottom>
             <h2>Cómo conseguimos, analizamos y ofrecemos la mejor experiencia</h2>
           </Fade>
@@ -26,12 +19,32 @@ export default function ComoFunciona() {
           </Fade>
         </section>
         <section>
-          <ContentImage reverse={true} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
-          <ContentImage reverse={false} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
-          <ContentImage reverse={true} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
-          <ContentImage reverse={false} priority={2} title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."} image={bannerHome} />
+          <ContentImage
+              reverse={true}
+              priority={2}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."}
+              image={"/images/banner-home.png"} />
+          <ContentImage
+              reverse={false}
+              priority={2}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."}
+              image={"/images/banner-home.png"} />
+          <ContentImage
+              reverse={true}
+              priority={2}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."}
+              image={"/images/banner-home.png"} />
+          <ContentImage
+              reverse={false}
+              priority={2}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh neque tortor scelerisque eget blandit metus turpis feugiat dis. Hendrerit magnis aliquet duis bibendum dolor mauris non sed proin. Nulla amet platea egestas sagittis sem. A tortor nunc maecenas quam mi. In faucibus hendrerit tristique amet, nec tristique sed nunc."}
+              image={"/images/banner-home.png"} />
         </section>
-        <section className={`${styles.titleContent} ${styles.blueContent}`}>
+        <section className="titleContent blueContent">
           <Fade bottom>
             <h2>Os presentamos a nuestro Smart Health Coach</h2>
           </Fade>
@@ -43,7 +56,11 @@ export default function ComoFunciona() {
           </div>
         </section>
         <section>
-          <BannerCta title={"Únete a la lista de empresas interesadas en mejorar el bienestar de sus empleados"} cta={{url: '/demo', text: 'Solicita una demo', link: "Contacta con nosotros"}} backImage={bannerCtaBackground}/>
+          <BannerCta
+              title={"Únete a la lista de empresas interesadas en mejorar el bienestar de sus empleados"}
+              cta={{url: '/demo', text: 'Solicita una demo'}}
+              link={{url: '/contacto', text: 'Contacta con nosotros'}}
+              backImage={"/images/banner-cta-background.svg"}/>
         </section>
       </>
   )

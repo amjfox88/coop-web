@@ -1,6 +1,5 @@
 .card {
   width: 224px;
-  height: 271px;
   background-color: var(--dark-blue);
   border-radius: 10px;
   display: inline-flex;
@@ -10,13 +9,21 @@
   padding: 32px 24px;
   box-sizing: border-box;
 }
+.cardImage {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 24px;
+}
 .cardTitle {
   color: #ffffff;
-  margin: 0;
   text-align: center;
+  margin: 0 0 24px;
 }
 .cardText {
   color: #ffffff;
   margin: 0;
   text-align: center;
+  font-size: 14px;
+  line-height: 18px;
 }

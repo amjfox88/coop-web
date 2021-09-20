@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  const {name, companyEmail, message, phone} = req.body;
+  const {name, secondName, companyEmail, message, phone, numberEmployees, position} = req.body;
 
   const transporter = nodemailer.createTransport({
     host: process.env.USER_CONTACT_EMAIL_HOST,
@@ -21,9 +21,9 @@ export default async function handler(req, res) {
       subject: `Contacto de ${name}`,
       html: `<p>${message}</p>`
     })
-    console.log(emailRes);
+    console.log('Correcto', emailRes);
   } catch (e) {
-    console.log(e);
+    console.error('Error', e);
   }
 
   res.status(200).json(req.body)

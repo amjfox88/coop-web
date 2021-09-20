@@ -1,0 +1,58 @@
+[
+  [
+    {
+      "id": "1",
+      "title": "Cómo funciona",
+      "url": "/como-funciona"
+    },
+    {
+      "id": "2",
+      "title": "Sobre nosotros",
+      "url": "/sobre-nosotros"
+    },
+    {
+      "id": "3",
+      "title": "Smart health coach",
+      "url": "/smart-health-coach"
+    }
+  ],
+  [
+    {
+      "id": "4",
+      "title": "Solicita una demo",
+      "url": "/solicita-demo"
+    },
+    {
+      "id": "5",
+      "title": "Blog",
+      "url": "/blog"
+    },
+    {
+      "id": "6",
+      "title": "Contacto",
+      "url": "/contacto"
+    }
+  ],
+  [
+    {
+      "id": "7",
+      "title": "Términos de uso",
+      "url": "/terminos-de-uso"
+    },
+    {
+      "id": "8",
+      "title": "Política de privacidad",
+      "url": "/politica-de-privacidad"
+    },
+    {
+      "id": "9",
+      "title": "GDPR",
+      "url": "/gdpr"
+    },
+    {
+      "id": "10",
+      "title": "Accesibilidad",
+      "url": "/accesibilidad"
+    }
+  ]
+]

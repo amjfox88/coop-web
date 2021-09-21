@@ -14,7 +14,16 @@ export default function Banner(props) {
           <Fade bottom>
             <h1 className={styles.title}>{props.title}</h1>
           </Fade>
-          {props.text && <Fade bottom><p>{props.text}</p></Fade>}
+          {
+            props.text &&
+              <Fade bottom>
+                {
+                  !Array.isArray(props.text) ? <p>{props.text}</p> : props.text.map((txt, index) => {
+                    return (<p key={index}>{txt}</p>)
+                  })
+                }
+              </Fade>
+          }
           {props.cta &&
           <Fade bottom>
             <Button url={props.cta.url} text={props.cta.text} size={"L"}/>

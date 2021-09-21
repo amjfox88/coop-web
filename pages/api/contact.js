@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export default async function handler(req, res) {
+export default async (req, res) => {
   const {name, secondName, companyEmail, message, phone, numberEmployees, position} = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -15,13 +15,13 @@ export default async function handler(req, res) {
   })
 
   try {
-    const emailRes = await transporter.sendMail({
+    await transporter.sendMail({
       from: companyEmail,
       to: 'noreply@coophealth.es',
       subject: `Contacto de ${name}`,
       html: `<p>${message}</p>`
     })
-    console.log('Correcto', emailRes);
+
   } catch (e) {
     console.error('Error', e);
   }

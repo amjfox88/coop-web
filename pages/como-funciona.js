@@ -58,7 +58,7 @@ export default function ComoFunciona() {
         <section>
           <BannerCta
               title={"Únete a la lista de empresas interesadas en mejorar el bienestar de sus empleados"}
-              cta={{url: '/demo', text: 'Solicita una demo'}}
+              cta={{url: '/solicita-demo', text: 'Solicita una demo'}}
               link={{url: '/contacto', text: 'Contacta con nosotros'}}
               backImage={"/images/banner-cta-background.svg"}/>
         </section>

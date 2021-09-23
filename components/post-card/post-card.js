@@ -24,7 +24,7 @@ export default function PostCard({tag, title, excerpt, slug, image}) {
         <div>
           <CustomTitle>{title}</CustomTitle>
           <div dangerouslySetInnerHTML={{ __html: excerpt }} className={styles.excerpt}/>
-          <Link href={`/posts/${slug}`}><a aria-label={title} className={styles.anchor}>Leer más</a></Link>
+          <Link href={slug}><a aria-label={title} className={styles.anchor}>Leer más</a></Link>
         </div>
       </article>
   )

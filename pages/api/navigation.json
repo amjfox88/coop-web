@@ -1,0 +1,37 @@
+{
+  "menu": {},
+  "sidebar": [
+    {
+      "name": "Inicio",
+      "link": "/"
+    },
+    {
+      "name": "Cómo funciona",
+      "link": "/como-funciona"
+    },
+    {
+      "name": "Sobre nosotros",
+      "link": "/sobre-nosotros"
+    },
+    {
+      "name": "Servicios Presenciales",
+      "link": "/servicios"
+    },
+    {
+      "name": "Smart Health Coach",
+      "link": "/smart-health-coach"
+    },
+    {
+      "name": "Solicita una demo",
+      "link": "/solicita-demo"
+    },
+    {
+      "name": "Blog",
+      "link": "/blog"
+    },
+    {
+      "name": "Contacto",
+      "link": "/contacto"
+    }
+  ]
+}

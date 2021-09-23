@@ -6,7 +6,6 @@ export default function Banner(props) {
   const divStyle = {
     backgroundImage: `url('${props.backImage ? props.backImage : ''}')`,
   };
-
   const className = props.theme === 'light' ? `${styles.banner} ${styles[props.theme]}` : `${styles.banner}`;
   return (
       <section className={className} style={props.backImage ? divStyle : null}>
@@ -31,7 +30,7 @@ export default function Banner(props) {
           }
         </div>
         <div className={styles.right}>
-          <Fade right>
+          <Fade right cascade>
             {props.children}
           </Fade>
         </div>

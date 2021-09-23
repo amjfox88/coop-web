@@ -10,7 +10,7 @@ export default function BannerCta(props) {
   return (
       <div className={styles.banner} style={background}>
           <Fade bottom>
-            <h2 className={styles.title}>{props.title}</h2>
+            <h4 className={styles.title}>{props.title}</h4>
           </Fade>
           { props.text ? <Fade bottom>
             <p className={styles.text}>{props.text}</p>

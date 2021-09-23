@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from 'next/image'
-import claimLogo from "/public/images/coop-logo-claim.png"
+import claimLogo from "/public/coop-claim.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
@@ -12,8 +12,8 @@ export default function Footer () {
   return (
       <footer className={styles.footer}>
         <div className={styles.footerLeft}>
-          <div>
-            <Link href={"/"}><a><Image src={claimLogo}/></a></Link>
+          <div className={styles.logo}>
+            <Link href={"/"}><a><Image src={claimLogo} layout={"fill"} objectFit={"contain"}/></a></Link>
           </div>
           <ul className={styles.socialIcons}>
             <li><FontAwesomeIcon icon={faLinkedin} color={'#262AF2'}></FontAwesomeIcon></li>

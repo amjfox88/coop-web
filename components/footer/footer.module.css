@@ -7,16 +7,22 @@
   display: grid;
   grid-gap: 48px;
 }
+.logo {
+  position: relative;
+  height: 50px;
+  width: 175px;
+}
 .socialIcons {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 24px);
+  grid-template-columns: repeat(auto-fit, 24px);
   grid-gap: 32px;
   font-size: 24px;
 }
 .linksColumns {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 33%);
+  grid-template-columns: repeat(auto-fit, 33%);
   justify-content: flex-end;
+  justify-items: flex-end;
 }
 .linksColumns ul {
   list-style: none;
@@ -25,13 +31,11 @@
 }
 .linksColumns ul li {
   color: var(--blue);
-  font-family: 'Avenir';
   font-weight: bolder;
   margin-bottom: 24px;
 }
 .linksColumns ul li {
   color: var(--blue);
-  font-family: 'Avenir';
   font-weight: bolder;
   margin-bottom: 24px;
 }
@@ -39,4 +43,17 @@
   color: var(--dark-blue);
   font-size: 14px;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 120px 0;
+  }
+  .linksColumns {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: flex-start;
+  }
 }

@@ -1,6 +1,7 @@
 .contentImage{
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 120px;
   align-items: center;
   margin-bottom: 120px;
 }
@@ -15,7 +16,6 @@
 }
 .contentImage.reverse .imgBox{
   grid-area: 1 / 1 / 1 / 1;
-  justify-self: flex-start;
 }
 .contentImage .textBox {
   display: grid;
@@ -30,14 +30,11 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 
 .title {
-  font-size: 48px;
   color: var(--dark-blue);
-  font-weight: 600;
   margin: 0;
 }
 
@@ -47,4 +44,21 @@
   font-weight: 500;
   line-height: 32px;
   text-align: initial;
+}
+
+@media (max-width: 480px) {
+  .contentImage{
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 40px;
+  }
+  .contentImage .imgBox {
+    width: 100%;
+  }
+  .contentImage.reverse .textBox{
+    grid-area: initial;
+  }
+  .contentImage.reverse .imgBox{
+    grid-area: initial;
+  }
 }

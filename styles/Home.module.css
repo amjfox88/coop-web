@@ -1,23 +1,12 @@
-.titleContent {
-  padding: 120px 140px;
-}
-.titleContent .center {
-  text-align: center;
-}
-.titleContent.blueContent {
-  background-color: var(--blue);
-}
-.titleContent.blueContent, .titleContent.blueContent p, .titleContent.blueContent h2 {
-  color: #fff;
-}
 .swiper {
   margin-top: 80px;
 }
 .slideEmployee{
   text-align: left;
+  width: 40% !important;
 }
 .slideImageContainer {
-  width: 467px;
+  width: 100%;
   height: 374px;
   position: relative;
 }
@@ -46,6 +35,7 @@
 }
 .services li {
   margin: 8px;
+  width: 224px;
 }
 .link{
   text-align: center;
@@ -53,9 +43,18 @@
   text-decoration: underline;
   font-weight: bold;
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .slideImageContainer {
+    width: 100%;
+  }
+  .slideEmployee{
+    width: 85% !important;
+  }
+  .services li {
+    width: 100%;
   }
 }

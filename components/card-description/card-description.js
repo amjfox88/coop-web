@@ -5,10 +5,10 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import styles from './card-description.module.css'
 
-export default function CardDescription({cardTitle, cardText, linkedin, name, position}) {
+export default function CardDescription({cardTitle, cardText, linkedin, name, position, image}) {
   return (
       <div className={styles.cardDescription}>
-        <Card title={cardTitle} text={cardText} />
+        {cardTitle && <Card title={cardTitle} text={cardText} image={image}/>}
         <div className={styles.description}>
           { name ? <p className={styles.name}>{name}</p> : null}
           { position ? <span className={styles.position}>{position}</span> : null}

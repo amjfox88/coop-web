@@ -76,25 +76,24 @@ export default function Demo() {
       },
       data
     }
-    try {
-      const response = await axios(config);
-      if (response.status === 200) {
-        showEmailResponse({
-          showForm: false,
-          img: "/images/formulario-ok.svg",
-          title: "Gracias por enviar tu solicitud",
-          message: "Nuestro equipo se pondrá en contacto lo antes posible para poder agendar la reunión"
+
+    await axios(config)
+        .then((res) => {
+          showEmailResponse({
+           showForm: false,
+           img: "/images/formulario-ok.svg",
+           title: "Gracias por enviar tu solicitud",
+           message: "Nuestro equipo se pondrá en contacto lo antes posible para poder agendar la reunión"
+         });
+        })
+        .catch(() => {
+          showEmailResponse({
+            showForm: false,
+            img: "/images/formulario-ko.svg",
+            title: "Lo sentimos pero hemos tenido un problema con el formulario",
+            message: "Por favor vuelve a intentarlo pasado unos minutos y si persiste el problema contacta con nosotros"
+          });
         });
-      }
-    } catch (err) {
-      showEmailResponse({
-        showForm: false,
-        img: "/images/formulario-ko.svg",
-        title: "Lo sentimos pero hemos tenido un problema con el formulario",
-        message: "Por favor vuelve a intentarlo pasado unos minutos y si persiste el problema contacta con nosotros"
-      });
-      console.log(err);
-    }
   }
 
 

@@ -1,5 +1,5 @@
 .card {
-  width: 224px;
+  width: 100%;
   background-color: var(--dark-blue);
   border-radius: 10px;
   display: inline-flex;

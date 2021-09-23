@@ -1,6 +1,7 @@
 .header {
   display:grid;
   grid-template-columns: auto 1fr auto;
+  align-items: center;
   padding: 20px 0;
 }
 .nav {
@@ -14,4 +15,30 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
+}
+.burgerButton {
+  justify-self: flex-end;
+  width: 28px;
+  height: 28px;
+  display: none;
+  grid-template-rows: 2px 2px;
+  align-content: space-evenly;
+}
+.burgerButton span{
+  display: block;
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 2px;
+}
+
+@media (max-width: 860px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav, .headerButton {
+    display: none;
+  }
+  .burgerButton {
+    display: grid;
+  }
 }

@@ -3,7 +3,7 @@ import CardDescription from "../components/card-description/card-description";
 import Fade from "react-reveal/Fade";
 import styles from "../styles/sobre-nosotros.module.css";
 import BannerCta from "../components/banner-cta/banner-cta";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const CustomTab = ({ children, ...otherProps }) => (
@@ -12,7 +12,9 @@ const CustomTab = ({ children, ...otherProps }) => (
     </Tab>
 );
 
-CustomTab.tabsRole = 'Tab'; // Required field to use your custom Tab
+CustomTab.tabsRole = 'Tab';
+
+resetIdCounter(); // Allows reseting the internal id counter which is used to generate unique id's for tabs and tab panels.
 
 
 export default function ComoFunciona() {
@@ -20,23 +22,17 @@ export default function ComoFunciona() {
       <>
         <Banner title={"Experiencia y conocimiento con propósito"} backImage={"/images/sobre-nosotros-banner.png"} cta={{url: '/solicita-demo', text: 'Únete al equipo'}} />
         <section className="titleContent center">
-          <Fade bottom>
-            <h2>Un equipo preocupado y centrado en la salud integral de las personas</h2>
-          </Fade>
-          <Fade bottom>
-            <p>Se necesitan todo tipo de talento para resolver problemas globales enormemente complejos, por lo que hemos creado un equipo específicamente equipado para abordar los desafíos que enfrenta el mundo todos los días.</p>
-            <p>Encontramos los profesionales más inteligentes y los científicos más creativos. Y les damos un lugar para colaborar por el bien común.</p>
+          <Fade bottom cascade>
+            <h2>Un equipo multidisciplinar comprometido con el bienestar y la salud corporativa</h2>
+            <p>Un mundo global requiere de una salud que acompañe a las personas en todas sus dimensiones: física, mental, social,  emocional, espiritual y profesional. Por eso Coop está formado por profesionales de diferentes áreas, cuya visión creativa, actitud proactiva y dilatada experiencia los convierten en el equipo perfecto para el cuidado integral de las personas. </p>
           </Fade>
         </section>
         <section className="titleContent blueContent">
-          <Tabs className={styles.tabs} selectedTabClassName="select">
+          <Tabs className={styles.tabs} selectedTabClassName="selected">
             <TabList className={styles.tabList}>
               <CustomTab>Leadership</CustomTab>
               <CustomTab>Comité Científico</CustomTab>
               <CustomTab>Especialistas</CustomTab>
-              {/*<Tab>Title 1</Tab>
-              <Tab>Title 2</Tab>
-              <Tab>Title 2</Tab>*/}
             </TabList>
 
             <TabPanel>
@@ -69,8 +65,8 @@ export default function ComoFunciona() {
         </section>
         <section>
           <BannerCta
-              title={"¿Quieres unirte a nosotros?"}
-              text={"Trabajamos con personas que realmente se preocupan. Coop Health está impulsado por una misión y es emprendedor, ofrecemos autonomía y potencial de crecimiento en un espacio verdaderamente transformador."}
+              title={"¿Quieres unirte a Coop?"}
+              text={"Si tú también te has hecho las preguntas —¿cómo contribuir a mejorar la salud de mi entorno? ¿Cómo mejorar el día a día dentro de las organizaciones? ¿Cómo facilitar el buen clima empresarial?— quizá compartas nuestra visión. Ofrecemos autonomía y crecimiento profesional en un espacio absolutamente innovador. ¿Quieres transformar la realidad con nosotros?"}
               cta={{url: '/demo', text: 'Únete al equipo'}}
               backImage={"/images/banner-cta-background.svg"}/>
         </section>

@@ -111,3 +111,9 @@
 .textareaCounter.error {
   color: #FF3B3B;
 }
+
+@media (max-width: 480px) {
+  .formData, .formAdditionalData {
+    grid-template-columns: 1fr;
+  }
+}

@@ -7,12 +7,12 @@ export default function ContentImage({title, priority, text, image, reverse}) {
   return (
       <div className={`${styles.contentImage} ${reverse ? styles.reverse : ''} `}>
         <div className={styles.textBox}>
-          <Fade bottom>
+          {title && <Fade bottom>
             <CustomTag className={styles.title}>{title}</CustomTag>
-          </Fade>
-          <Fade bottom>
+          </Fade>}
+          {text && <Fade bottom>
             <p className={styles.text}>{text}</p>
-          </Fade>
+          </Fade>}
         </div>
         <div className={styles.imgBox}>
           <Fade right={!reverse} left={reverse}>

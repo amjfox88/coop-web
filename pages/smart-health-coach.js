@@ -40,7 +40,7 @@ export default function SmartHealthCoach() {
           <BannerCta
               title={"¿Eres una empresa? Únete a Coop y mejora la calidad de vida y bienestar de tus empleados"}
               cta={{url: '/solicita-demo', text: 'Solicita una demo'}}
-              link={{url: '', text: 'Contacta con nosotros'}}
+              link={{url: '/contacto', text: 'Contacta con nosotros'}}
               backImage={"/images/banner-cta-background.svg"}/>
         </section>
       </>

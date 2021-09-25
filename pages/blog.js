@@ -4,7 +4,7 @@ import PostCard from "../components/post-card/post-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons/faArrowCircleRight";
 import styles from '/styles/blog.module.css'
-import {getNewsBlog} from './api/blog';
+import {getPostAndNews} from './api/blog';
 import Link from "next/link";
 
 function Blog({news, posts}) {
@@ -31,7 +31,8 @@ function Blog({news, posts}) {
                             title={n.title}
                             excerpt={n.excerpt}
                             image={n.featuredImage.node.sourceUrl}
-                            slug={n.slug}/>
+                            externalLink={`${n.postLink.externalLink ? n.postLink.externalLink : '/'}`}
+                        />
                       </li>
                   )
                 })
@@ -64,8 +65,8 @@ function Blog({news, posts}) {
 }
 
 export async function getStaticProps() {
-  const news = await getNewsBlog('noticias');
-  const posts = await getNewsBlog('publicaciones');
+  const news = await getPostAndNews('noticias');
+  const posts = await getPostAndNews('publicaciones');
 
   return {
     props: {news, posts},

@@ -10,3 +10,8 @@
 .banner.noBackground {
   background-color: var(--dark-blue);
 }
+@media (max-width: 480px) {
+  .banner {
+    padding: 120px 40px;
+  }
+}

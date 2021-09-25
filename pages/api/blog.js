@@ -21,7 +21,7 @@ async function fetchAPI(query, variables) {
   return json.data
 }
 
-export async function getNewsBlog(cat) {
+export async function getPostAndNews(cat) {
   const data = await fetchAPI(
       `
     query getBlogPosts {
@@ -35,7 +35,71 @@ export async function getNewsBlog(cat) {
         }
         title
         slug
+        postLink {
+          externalLink
+          }
       }
+    }
+  }
+  `
+  )
+  return data?.posts
+}
+
+export async function getAllPosts() {
+  // https://www.wpgraphql.com/2020/03/26/forward-and-backward-pagination-with-wpgraphql/
+  // Bind endCursor and startCursor to first and last properties to fetch more posts. Then push result to data array in front
+  /*const data = await fetchAPI(
+      `
+    query getAllPosts {
+      posts(
+        where: {categoryName: "publicaciones", orderby: {field: DATE, order: DESC}}
+        after: ""
+        first: "10"
+        before: ""
+      ) {
+        nodes {
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          title
+          slug
+        }
+        pageInfo {
+          hasNextPage
+          hasPreviousPage
+          endCursor
+          startCursor
+        }
+    }
+  }
+  `
+  )*/
+  const data = await fetchAPI(
+      `
+    query getAllPosts {
+      posts(
+        where: {categoryName: "publicaciones", orderby: {field: DATE, order: DESC}}
+      ) {
+        nodes {
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          title
+          slug
+        }
+        pageInfo {
+          hasNextPage
+          hasPreviousPage
+          endCursor
+          startCursor
+        }
     }
   }
   `
@@ -70,7 +134,7 @@ export async function getSinglePost(context) {
 export async function getAllPostsWithSlug() {
   const data = await fetchAPI(`
     query getAllPostsSlug {
-      posts {
+      posts(where: {categoryName: "publicaciones"}) {
         nodes {
           slug
           title

@@ -1,0 +1,10 @@
+.postsList {
+  display: grid;
+  grid-auto-rows: 350px;
+  grid-gap: 40px;
+  justify-content: flex-start;
+  align-content: center;
+}
+.title {
+  margin-bottom: 80px;
+}

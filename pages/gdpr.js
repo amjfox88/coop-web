@@ -19,7 +19,7 @@ export default function Gdpr() {
             <li><p>Cómo operamos en nuestra capacidad como procesadores de datos que actúan en nombre de nuestros usuarios.</p></li>
           </ul>
           <p>Continuaremos monitoreando activamente la orientación regulatoria y las interpretaciones de los requisitos clave del GDPR para asegurarnos de estar al día con todos los requisitos legales y las mejores prácticas de privacidad.</p>
-          <p>Las personas en la Unión Europea pueden tener derecho a presentar una queja con respecto a una presunta infracción del GDPR ante la Autoridad de Supervisión Europea correspondiente, en particular en el Estado miembro de su residencia habitual o lugar de trabajo. Una lista de autoridades supervisoras está <a href={"https://politica-de-privacidad"}>disponible aquí</a>.</p>
+          <p>Las personas en la Unión Europea pueden tener derecho a presentar una queja con respecto a una presunta infracción del GDPR ante la Autoridad de Supervisión Europea correspondiente, en particular en el Estado miembro de su residencia habitual o lugar de trabajo. Una lista de autoridades supervisoras está <a href={"https://edpb.europa.eu/about-edpb/about-edpb/members_en"}>disponible aquí</a>.</p>
 
         </section>
       </>

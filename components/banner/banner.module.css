@@ -1,7 +1,7 @@
 .banner {
   display: grid;
   grid-template-columns: 60% 1fr;
-  grid-template-rows: 80vh;
+  grid-template-rows: calc(100vh - (68px * 2));
   align-items: center;
   justify-items: center;
   background-blend-mode: lighten;
@@ -33,7 +33,7 @@
   .banner{
     grid-template-columns: 1fr;
     align-items: flex-end;
-    /*grid-template-rows: 1fr;*/
+    grid-template-rows: 1fr;
     padding: 0 40px 100px;
   }
   .left div {

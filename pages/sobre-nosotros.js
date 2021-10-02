@@ -7,14 +7,14 @@ import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const CustomTab = ({ children, ...otherProps }) => (
-    <Tab className={styles.coopTab} {...otherProps}>
+    <Tab className="coopTab" {...otherProps}>
       <span>{children}</span>
     </Tab>
 );
 
 CustomTab.tabsRole = 'Tab';
 
-resetIdCounter(); // Allows reseting the internal id counter which is used to generate unique id's for tabs and tab panels.
+resetIdCounter();
 
 
 export default function ComoFunciona() {
@@ -28,8 +28,8 @@ export default function ComoFunciona() {
           </Fade>
         </section>
         <section className="titleContent blueContent">
-          <Tabs className={styles.tabs} selectedTabClassName="selected">
-            <TabList className={styles.tabList}>
+          <Tabs className="tabs" selectedTabClassName="selected">
+            <TabList className="tabList">
               <CustomTab>Leadership</CustomTab>
               <CustomTab>Comité Científico</CustomTab>
               <CustomTab>Especialistas</CustomTab>

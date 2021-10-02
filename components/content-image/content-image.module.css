@@ -1,8 +1,9 @@
 .contentImage{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "text image";
   grid-gap: 120px;
-  align-items: center;
   margin-bottom: 120px;
 }
 .contentImage:first-of-type{
@@ -12,21 +13,23 @@
   margin-bottom: 0;
 }
 .contentImage.reverse .textBox{
-  grid-area: 1 / 2 / 1 / 2;
+  grid-area: image;
 }
 .contentImage.reverse .imgBox{
-  grid-area: 1 / 1 / 1 / 1;
+  grid-area: text;
 }
 .contentImage .textBox {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   justify-self: center;
+  text-align: left;
 }
 
 .contentImage .imgBox {
   width: 385px;
   height: 374px;
-  justify-self: flex-end;
+  /*justify-self: center;*/
   position: relative;
   border-radius: 10px;
   overflow: hidden;

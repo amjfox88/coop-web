@@ -22,7 +22,7 @@
     }
 
   ],
-  "services": [
+  "servicesHome": [
     {
       "title": "Diagnóstico y análisis",
       "text": "El proceso arranca con un análisis del estado de la empresa en materia de salud y bienestar.",
@@ -42,6 +42,118 @@
       "title": "Seguimiento y data",
       "text": "Solo la recogida de información cualificada y su análisis nos permite implementar mejoras.",
       "image": "/images/Management.svg"
+    }
+  ],
+  "services": [
+    {
+      "title": "Evaluación y Diagnóstico de Salud",
+      "services": [
+        {
+          "title": "Consultoría de Salud Corporativa",
+          "text": "Estudio y evaluación del estado de salud de la empresa a través de datos de absentismo y accidentabilidad. Creación de un Programa Corporativo de Bienestar Integral.",
+          "image": "/images/servicios1.png"
+        }
+      ]
+    },
+    {
+      "title": "Bienestar Físico",
+      "services": [
+        {
+          "title": "Programa de Actividad Física",
+          "text": "Evaluación de la condición física individual y prescripción de la actividad personalizada. Uso de App específica y servicio de entrenador personal.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Nutrición y Alimentación Inteligente y Sostenible",
+          "text": "Talleres temáticos y servicio de nutricionista presenciales y online. Uso de App específica.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Gestión de Clubes Deportivos",
+          "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Gestión de Espacios y Actividades en Gimnasios Corporativos",
+          "text": "Diseño y ejecución del espacio. Contratación de equipamientos, tecnología y gestión completa de actividades con nuestros entrenadores",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Educación Postural",
+          "text": "Talleres específicos enfocados a la mejora de la postura estática y en movimiento. Prevención de trastornos músculo esqueléticos.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Salud Visual",
+          "text": "Talleres específicos para la mejora de las alteraciones visuales con metodología práctica.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Descanso y Sueño",
+          "text": "Charlas con especialistas en mejora del descanso y sueño. Alteraciones y prevención de apneas.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Fisioterapia y recuperación funcional",
+          "text": "Servicio de fisioterapia preventivo in company. Evaluaciones y tratamientos.",
+          "image": "/images/servicios1.png"
+        }
+      ]
+    },
+    {
+      "title": "Bienestar Emocional",
+      "services": [
+        {
+          "title": "Prevención de Riesgos Psicosociales",
+          "text": "Evaluación de la condición física individual y prescripción de la actividad personalizada. Uso de App específica y servicio de entrenador personal.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Mindfulness",
+          "text": "Talleres temáticos y servicio de nutricionista presenciales y online. Uso de App específica.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Gestión de Clubes Deportivos",
+          "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Acompañamiento en Enfermedad y Duelo",
+          "text": "Diseño y ejecución del espacio. Contratación de equipamientos, tecnología y gestión completa de actividades con nuestros entrenadores",
+          "image": "/images/servicios1.png"
+        }
+      ]
+    },
+    {
+      "title": "Talento, Cultura y Desarrollo Profesional",
+      "services": [
+        {
+          "title": "Liderazgo Positivo",
+          "text": "Entrenamiento en cinco competencias clave para lograr resultados extraordinarios en entornos incierto y convulsos muy importantes para organizaciones saludables.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Comunicación No Violenta y Lenguaje Positivo",
+          "text": "Aprender a identificar nuestras propias formas de actuar que aumentan el conflicto y la desconexión. Entrenar nuevas formas de comunicación que potencien la armonía y la cooperación.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Gestión del Tiempo",
+          "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Bienestar Financiero",
+          "text": "Entrenar la gestión de nuestra economía. Identificar y generar nuevas fuentes de ingresos, ahorros, así como tener una mentalidad de prosperidad y abundancia.",
+          "image": "/images/servicios1.png"
+        },
+        {
+          "title": "Coaching Profesional, Ejecutivo y de Equipos",
+          "text": "Talleres específicos enfocados a la mejora de la postura estática y en movimiento. Prevención de trastornos músculo esqueléticos.",
+          "image": "/images/servicios1.png"
+        }
+      ]
     }
   ]
 }

@@ -7,36 +7,3 @@
   align-items: flex-start;
   margin-top: 60px;
 }
-.tabList {
-  border-bottom: 1px solid #121473;
-}
-
-.tabList li {
-  font-size: 24px;
-  margin-right: 32px;
-  padding: 0 0 8px;
-  outline: none;
-  position: relative;
-}
-
-.tabList li:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width .3s;
-  position: absolute;
-  bottom: -1px;
-}
-
-.tabList li[aria-selected="true"] {
-  font-weight: bold;
-}
-.coopTab {
-  display: inline-block;
-  cursor: pointer;
-}
-.tabList li[aria-selected="true"]:after{
-  width: 100%;
-}

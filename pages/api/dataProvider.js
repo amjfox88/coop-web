@@ -1,12 +1,15 @@
-import employees from './data.json';
+import data from './data.json';
 import footerData from "./footer.json";
 
 export async function getEmployees() {
-  return employees.employees
+  return data.employees
 }
 export async function getServices() {
-  return employees.services
+  return data.servicesHome
 }
 export function getFooterLinks() {
   return footerData.footer
+}
+export function getFullServices() {
+  return data.services
 }

@@ -51,7 +51,7 @@
         {
           "title": "Consultoría de Salud Corporativa",
           "text": "Estudio y evaluación del estado de salud de la empresa a través de datos de absentismo y accidentabilidad. Creación de un Programa Corporativo de Bienestar Integral.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios1.png"
         }
       ]
     },
@@ -61,42 +61,42 @@
         {
           "title": "Programa de Actividad Física",
           "text": "Evaluación de la condición física individual y prescripción de la actividad personalizada. Uso de App específica y servicio de entrenador personal.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios2.png"
         },
         {
           "title": "Nutrición y Alimentación Inteligente y Sostenible",
           "text": "Talleres temáticos y servicio de nutricionista presenciales y online. Uso de App específica.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios3.png"
         },
         {
           "title": "Gestión de Clubes Deportivos",
           "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios4.png"
         },
         {
           "title": "Gestión de Espacios y Actividades en Gimnasios Corporativos",
           "text": "Diseño y ejecución del espacio. Contratación de equipamientos, tecnología y gestión completa de actividades con nuestros entrenadores",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios5.png"
         },
         {
           "title": "Educación Postural",
           "text": "Talleres específicos enfocados a la mejora de la postura estática y en movimiento. Prevención de trastornos músculo esqueléticos.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios6.png"
         },
         {
           "title": "Salud Visual",
           "text": "Talleres específicos para la mejora de las alteraciones visuales con metodología práctica.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios7.png"
         },
         {
           "title": "Descanso y Sueño",
           "text": "Charlas con especialistas en mejora del descanso y sueño. Alteraciones y prevención de apneas.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios8.png"
         },
         {
           "title": "Fisioterapia y recuperación funcional",
           "text": "Servicio de fisioterapia preventivo in company. Evaluaciones y tratamientos.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios9.png"
         }
       ]
     },
@@ -105,23 +105,28 @@
       "services": [
         {
           "title": "Prevención de Riesgos Psicosociales",
-          "text": "Evaluación de la condición física individual y prescripción de la actividad personalizada. Uso de App específica y servicio de entrenador personal.",
-          "image": "/images/servicios1.png"
+          "text": "App para encuestas y recomendaciones cuyo objetivo es prevenir y ayudar a las personas a mejorar su bienestar.",
+          "image": "/images/services/servicios10.png"
         },
         {
           "title": "Mindfulness",
-          "text": "Talleres temáticos y servicio de nutricionista presenciales y online. Uso de App específica.",
-          "image": "/images/servicios1.png"
+          "text": "Clases presenciales. Meditación guiada. Coherencia cardiaca.",
+          "image": "/images/services/servicios11.png"
         },
         {
-          "title": "Gestión de Clubes Deportivos",
-          "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
-          "image": "/images/servicios1.png"
+          "title": "Gabinete psicológico para atención individual",
+          "text": "Consultas con psicólogos propios.",
+          "image": "/images/services/servicios12.png"
         },
         {
           "title": "Acompañamiento en Enfermedad y Duelo",
-          "text": "Diseño y ejecución del espacio. Contratación de equipamientos, tecnología y gestión completa de actividades con nuestros entrenadores",
-          "image": "/images/servicios1.png"
+          "text": "Talleres grupales. Sesiones presenciales y online.",
+          "image": "/images/services/servicios13.png"
+        },
+        {
+          "title": "Calidad mental y regulación de emociones",
+          "text": "Talleres presenciales y realización de cuestionario validado de Felicidad Individual y entrenamiento en habilidades para la felicidad. Establecimiento de un programa de Felicidad Organizacional.",
+          "image": "/images/services/servicios14.png"
         }
       ]
     },
@@ -130,28 +135,28 @@
       "services": [
         {
           "title": "Liderazgo Positivo",
-          "text": "Entrenamiento en cinco competencias clave para lograr resultados extraordinarios en entornos incierto y convulsos muy importantes para organizaciones saludables.",
-          "image": "/images/servicios1.png"
+          "text": "Talleres de entrenamiento en cinco competencias clave para lograr resultados extraordinarios en entornos inciertos y convulsos muy importantes para organizaciones saludables.",
+          "image": "/images/services/servicios15.png"
         },
         {
           "title": "Comunicación No Violenta y Lenguaje Positivo",
-          "text": "Aprender a identificar nuestras propias formas de actuar que aumentan el conflicto y la desconexión. Entrenar nuevas formas de comunicación que potencien la armonía y la cooperación.",
-          "image": "/images/servicios1.png"
+          "text": "Talleres presenciales para aprender a identificar nuestras propias formas de actuar que aumentan el conflicto y la desconexión. Entrenar nuevas formas de comunicación que potencien la armonía y la cooperación.",
+          "image": "/images/services/servicios16.png"
         },
         {
           "title": "Gestión del Tiempo",
-          "text": "Organización de equipos deportivos y gestión para la participación en competiciones intra e Inter empresas. Running, pádel, etc.",
-          "image": "/images/servicios1.png"
+          "text": "Formación centrada en el entrenamiento para gestionar eficazmente y sin esfuerzo nuestro tiempo, mejorando el rendimiento y la productividad.",
+          "image": "/images/services/servicios17.png"
         },
         {
           "title": "Bienestar Financiero",
           "text": "Entrenar la gestión de nuestra economía. Identificar y generar nuevas fuentes de ingresos, ahorros, así como tener una mentalidad de prosperidad y abundancia.",
-          "image": "/images/servicios1.png"
+          "image": "/images/services/servicios18.png"
         },
         {
           "title": "Coaching Profesional, Ejecutivo y de Equipos",
-          "text": "Talleres específicos enfocados a la mejora de la postura estática y en movimiento. Prevención de trastornos músculo esqueléticos.",
-          "image": "/images/servicios1.png"
+          "text": "Procesos para la mejora del rendimiento personal, profesional y de equipos.",
+          "image": "/images/services/servicios19.png"
         }
       ]
     }

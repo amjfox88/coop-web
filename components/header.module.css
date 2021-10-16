@@ -7,7 +7,7 @@
 .nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: var(--dark-blue);
 }
 .nav a{
@@ -15,6 +15,11 @@
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
+  color: var(--dark-blue)
+}
+.nav a.active{
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
 }
 .burgerButton {
   justify-self: flex-end;

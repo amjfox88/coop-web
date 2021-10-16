@@ -50,7 +50,7 @@ export default function Servicios({services}) {
                               <ContentImage
                                   key={srv.title}
                                   priority={2}
-                                  reverse={index % 2 === 0}
+                                  reverse={!(index % 2 === 0)}
                                   title={srv.title}
                                   text={srv.text}
                                   image={srv.image}/>

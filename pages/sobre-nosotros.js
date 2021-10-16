@@ -67,7 +67,7 @@ export default function ComoFunciona() {
           <BannerCta
               title={"¿Quieres unirte a Coop?"}
               text={"Si tú también te has hecho las preguntas —¿cómo contribuir a mejorar la salud de mi entorno? ¿Cómo mejorar el día a día dentro de las organizaciones? ¿Cómo facilitar el buen clima empresarial?— quizá compartas nuestra visión. Ofrecemos autonomía y crecimiento profesional en un espacio absolutamente innovador. ¿Quieres transformar la realidad con nosotros?"}
-              cta={{url: '/demo', text: 'Únete al equipo'}}
+              cta={{url: '/solicita-demo', text: 'Únete al equipo'}}
               backImage={"/images/banner-cta-background.svg"}/>
         </section>
       </>

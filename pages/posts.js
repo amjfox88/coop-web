@@ -9,7 +9,7 @@ export default function Posts({allPosts}) {
   return (
       <>
         <section className="titleContent">
-          <Link href={"/posts"}><a><FontAwesomeIcon icon={faArrowCircleLeft} color={'#262AF2'} className={styles.icon}/> Volver atrás</a></Link>
+          <Link href={"/blog"}><a><FontAwesomeIcon icon={faArrowCircleLeft} color={'#262AF2'} className={styles.icon}/> Volver atrás</a></Link>
           <h2 className={styles.title}>Publicaciones</h2>
           <ul className={styles.postsList}>
             {

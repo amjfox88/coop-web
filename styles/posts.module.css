@@ -1,10 +1,11 @@
 .postsList {
   display: grid;
-  grid-auto-rows: 350px;
+  grid-template-columns: 1fr;
   grid-gap: 40px;
   justify-content: flex-start;
   align-content: center;
 }
+
 .title {
   margin-bottom: 80px;
 }

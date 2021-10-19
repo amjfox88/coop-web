@@ -7,3 +7,9 @@
   align-items: flex-start;
   margin-top: 60px;
 }
+
+@media (max-width: 480px) {
+ .teamGrid {
+   grid-template-columns: repeat(auto-fit, calc(50% - 20px));
+ }
+}

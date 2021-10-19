@@ -24,11 +24,11 @@ function Home({services, employees}) {
         <Banner title={"Healthy people, better humans"} backImage={"/images/banner-home.png"}
                 cta={{url: '/solicita-demo', text: 'Solicita una demo'}}/>
         <section className="titleContent center">
-          <Fade bottom cascade>
+          <Fade bottom>
             <h2>La salud es la cualidad que nos permite desarrollar nuestro máximo potencial en beneficio propio y de la
               comunidad</h2>
           </Fade>
-          <Fade bottom cascade>
+          <Fade bottom>
             <p>Sin talento no hay negocio, sin equipo no hay proyecto, sin bienestar no hay futuro. Lo dicen las cifras,
               no nosotros. Un sinfín de estudios han demostrado que la implementación de programas encaminados a
               fomentar el bienestar y la salud de las personas dentro de las empresas tiene un resultado directo en el
@@ -47,7 +47,7 @@ function Home({services, employees}) {
               image="/images/content-home1.png"/>
         </section>
         <section className="titleContent center">
-          <Fade bottom cascade>
+          <Fade bottom>
             <h2>¿Cómo abordamos la salud y el bienestar de manera integral?</h2>
           </Fade>
         </section>
@@ -122,7 +122,7 @@ function Home({services, employees}) {
         </section>
         <section className="titleContent center">
           <div>
-            <Fade bottom cascade>
+            <Fade bottom>
               <h2>Acompañamiento integral</h2>
             </Fade>
           </div>

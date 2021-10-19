@@ -19,7 +19,7 @@ export default function Banner(props) {
         <style jsx>{`
           @media (max-width: 480px) {
             .${className} {
-              height: calc(${height}px - 68px);
+              height: calc(${height}px - (68px * 2));
             }
           }
         `}</style>

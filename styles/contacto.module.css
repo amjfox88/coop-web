@@ -20,3 +20,16 @@
   font-size: 24px;
   font-weight: bold;
 }
+
+@media (max-width: 480px) {
+  .emailInfo {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .emailInfo div:first-child {
+    padding: 0 40px 0 0;
+  }
+  .emailInfo p {
+    line-height: 18px;
+  }
+}

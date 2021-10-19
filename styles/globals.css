@@ -143,6 +143,11 @@ ul {
   width: 100%;
 }
 /* ------ */
+@media (max-width: 720px) {
+  .titleContent, .titleContentImage {
+    padding: 120px 60px;
+  }
+}
 
 @media (max-width: 480px) {
   body {
@@ -158,10 +163,26 @@ ul {
   h4{
     font-size: 24px;
   }
-  .titleContent {
+  .titleContent, .titleContentImage {
     padding: 120px 0;
   }
   .titleContent.blueContent {
     padding: 120px 16px;
   }
+  .tabList li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {}

@@ -47,7 +47,7 @@ export default function Banner(props) {
           }
         </div>
         <div className={styles.right}>
-          <Fade right cascade>
+          <Fade right>
             {props.children}
           </Fade>
         </div>

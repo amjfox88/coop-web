@@ -27,3 +27,11 @@
 .icon {
   font-size: 24px;
 }
+.postContent img{
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+.postContent figure{
+  margin: 0;
+}

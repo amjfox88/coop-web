@@ -5,6 +5,15 @@
   justify-content: flex-start;
   align-content: center;
 }
+.link {
+  display: flex;
+  align-items: center;
+}
+.link .icon {
+  width: 30px;
+  height: 24px;
+  padding-right: 10px;
+}
 
 .title {
   margin-bottom: 80px;

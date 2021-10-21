@@ -1,6 +1,6 @@
 .contentImage{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   grid-template-areas:
     "text image";
   grid-gap: 120px;
@@ -9,6 +9,7 @@
 }
 .contentImage.reverse{
   justify-items: flex-start;
+  grid-template-columns: auto 1fr;
 }
 .contentImage:first-of-type{
   margin-top: 120px

@@ -35,4 +35,9 @@
     font-size: 14px;
     line-height: 18px;
   }
+  .article.horizontal {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
 }

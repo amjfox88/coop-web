@@ -105,7 +105,7 @@ export default function Demo() {
             theme={'light'}
         >
           <Fade className={styles.fade} right>
-            <Image src={"/images/iphoneX.svg"} layout={"fill"} objectFit={"contain"}/>
+            <Image src={"/images/iphoneX.svg"} alt={"Mobile image"} layout={"fill"} objectFit={"contain"}/>
           </Fade>
         </Banner>
         {

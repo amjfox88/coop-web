@@ -15,9 +15,10 @@ export default async function handle(req, res) {
   })
 
   try {
+    console.log(numberEmployees);
     await transporter.sendMail({
       from: companyEmail,
-      to: 'info@coophealth.es',
+      to: 'noreply@coophealth.es',
       subject: `Datos solicitud de ${name} ${secondName}`,
       html: `<style>h1,h2{color:#121473; font-family: 'Arial',serif} p{font-family: 'Arial',serif}</style>
             <div style="padding: 20px 80px;background-color:#121473"><img height="20" alt="Coop logo" src="cid:logoCoop"></div>
@@ -35,7 +36,7 @@ export default async function handle(req, res) {
             <h2>Teléfono</h2>
             <p> ${phone}</p>
             <h2>Nº Empleados</h2>
-            <p>${numberEmployees ? numberEmployees : 'No definido'}</p>
+            <p>${numberEmployees.value ? numberEmployees.value : 'No definido'}</p>
             <h2>Mensaje</h2>
             <p> ${message}</p>`,
       attachments: [{

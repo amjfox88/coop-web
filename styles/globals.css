@@ -142,6 +142,13 @@ ul {
 .tabList li[aria-selected="true"]:after{
   width: 100%;
 }
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .titleContent.blueContent {
+    padding: 120px 40px;
+  }
+}
 /* ------ */
 @media (max-width: 720px) {
   .titleContent, .titleContentImage {
@@ -164,7 +171,7 @@ ul {
     font-size: 24px;
   }
   .titleContent, .titleContentImage {
-    padding: 120px 0;
+    padding: 120px 8px;
   }
   .titleContent.blueContent {
     padding: 120px 16px;
@@ -181,8 +188,6 @@ ul {
 /* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {}
 
-/* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {}
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {}

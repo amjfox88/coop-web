@@ -48,7 +48,7 @@ export default function ComoFunciona() {
           </Fade>
           <div className={`${styles.twoColumns}`}>
             <div>
-              <Image src={"/images/mobile-health-coach.png"} layout={'fill'} objectFit={"contain"}/>
+              <Image src={"/images/mobile-health-coach.png"} alt={"Mobile image"} layout={'fill'} objectFit={"contain"}/>
             </div>
             <div>
               <p>Más que un chatbot, un sistema de orientación y acompañamiento inteligente que se nutre de información anonimizada en tiempo real adaptándose a las necesidades y demandas de cada usuario. Así opera la Inteligencia Artificial cuando persigue la mejora de la calidad de vida de las personas.</p>

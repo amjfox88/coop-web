@@ -13,7 +13,7 @@ export default function Footer () {
       <footer className={styles.footer}>
         <div className={styles.footerLeft}>
           <div className={styles.logo}>
-            <Link href={"/"}><a><Image src={claimLogo} layout={"fill"} objectFit={"contain"}/></a></Link>
+            <Link href={"/"}><a><Image src={claimLogo} alt={"Logo Coop"} layout={"fill"} objectFit={"contain"}/></a></Link>
           </div>
           <ul className={styles.socialIcons}>
             <li><FontAwesomeIcon icon={faLinkedin} color={'#262AF2'}></FontAwesomeIcon></li>

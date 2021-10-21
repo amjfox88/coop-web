@@ -4,11 +4,11 @@
   grid-template-areas:
     "text image";
   grid-gap: 120px;
-  justify-items: flex-start;
+  justify-items: flex-end;
   margin-bottom: 120px;
 }
 .contentImage.reverse{
-  justify-items: flex-end;
+  justify-items: flex-start;
 }
 .contentImage:first-of-type{
   margin-top: 120px
@@ -31,9 +31,6 @@
 }
 
 .contentImage .imgBox {
-  /*width: 385px;*/
-  /*height: 374px;*/
-  /*justify-self: center;*/
   position: relative;
   border-radius: 10px;
   overflow: hidden;

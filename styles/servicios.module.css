@@ -15,9 +15,12 @@
 
 @media (max-width: 480px) {
   .servicesTabs {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-end;
     grid-gap: 8px;
+  }
+  .servicesTabs li{
+    font-size: 14px;
   }
 }

@@ -27,16 +27,16 @@ export default function PoliticaDeCookies() {
           <h3>¿Cómo desinstalar, bloquear o borrar cookies?</h3>
           <p>En cualquier momento puedes borrar las cookies que se hayan instalado en tu navegador. Aquí te proporcionamos las pautas para hacerlo:</p>
           <h4>Navegador Firefox:</h4>
-          <p>Herramientas -> Opciones -> Privacidad -> Historial -> Configuración Personalizada</p>
+          <p>Herramientas -&gt; Opciones -&gt; Privacidad -&gt; Historial -&gt; Configuración Personalizada</p>
           <p>Para más información, puedes consultar el soporte de Mozilla o la Ayuda del navegador.</p>
           <h4>Navegador Chrome:</h4>
-          <p>Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración de contenido</p>
+          <p>Configuración -&gt; Mostrar opciones avanzadas -&gt; Privacidad -&gt; Configuración de contenido</p>
           <p>Para más información, puedes consultar el soporte de Google o la Ayuda del navegador.</p>
           <h4>Navegador Safari:</h4>
-          <p>Preferencias -> Seguridad</p>
+          <p>Preferencias -&gt; Seguridad</p>
           <p>Para más información, puedes consultar el soporte de Apple o la Ayuda del navegador.</p>
           <h4>Navegador Internet Explorer:</h4>
-          <p>Herramientas -> Opciones de Internet -> Privacidad -> Configuración</p>
+          <p>Herramientas -&gt; Opciones de Internet -&gt; Privacidad -&gt; Configuración</p>
           <p>Para más información, puedes consultar el soporte de Microsoft o la Ayuda del navegador.</p>
         </section>
         <style jsx>{`

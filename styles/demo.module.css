@@ -116,4 +116,7 @@
   .formData, .formAdditionalData {
     grid-template-columns: 1fr;
   }
+  .error {
+    font-size: 10px;
+  }
 }

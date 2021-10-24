@@ -104,11 +104,6 @@ function Home({services, employees}) {
               }}
               className={styles.swiper}
           >
-            {/*{
-              "name": "Nombre del experto1",
-              "position": "Cargo o aporte a la empresa",
-              "image": "/images/Communication.svg"
-            }*/}
             {employees.length ? employees.map((emp) => (
                 <SwiperSlide key={emp.name} className={styles.slideEmployee}>
                   <div>

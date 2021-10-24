@@ -20,7 +20,7 @@ export default function App({Component, pageProps}) {
           <meta property="og:title" content="El nuevo paradigma de la salud corporativa"/>
           <meta property="og:description"
                 content="Coop es la herramienta que acompaña a los empleados en la mejora de su rendimiento cognitivo y físico a través de Inteligencia Artificial."/>
-          <meta property="og:image" content="/images/coop-logo-og.jpeg"/>
+          <meta property="og:image" content="/public/coop-logo-og.jpeg"/>
 
           {/*Twitter*/}
           <meta property="twitter:card" content="summary_large_image"/>
@@ -28,7 +28,7 @@ export default function App({Component, pageProps}) {
           <meta property="twitter:title" content="El nuevo paradigma de la salud corporativa"/>
           <meta property="twitter:description"
                 content="Coop es la herramienta que acompaña a los empleados en la mejora de su rendimiento cognitivo y físico a través de Inteligencia Artificial."/>
-          <meta property="twitter:image" content="/images/coop-logo-og.jpeg"/>
+          <meta property="twitter:image" content="/public/coop-logo-og.jpeg"/>
         </Head>
         <Layout>
           <Component {...pageProps} />

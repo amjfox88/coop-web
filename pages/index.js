@@ -105,7 +105,12 @@ function Home({services, employees}) {
               }}
               className={styles.swiper}
           >
-            {employees.map((emp) => (
+            {/*{
+              "name": "Nombre del experto1",
+              "position": "Cargo o aporte a la empresa",
+              "image": "/images/Communication.svg"
+            }*/}
+            {employees.length ? employees.map((emp) => (
                 <SwiperSlide key={emp.name} className={styles.slideEmployee}>
                   <div>
                     <div className={styles.slideImageContainer}>
@@ -116,7 +121,7 @@ function Home({services, employees}) {
                     <p className={styles.employeePosition}>{emp.position}</p>
                   </div>
                 </SwiperSlide>
-            ))}
+            )) : <Link href={"/sobre-nosotros"}><a>Conoce al equipo</a></Link>}
           </Swiper>
         </section>
         <section className="titleContent center">

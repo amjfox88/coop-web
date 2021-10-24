@@ -4,6 +4,9 @@ import footerData from "./footer.json";
 export async function getEmployees() {
   return data.employees
 }
+export async function getAllEmployees() {
+  return data.allEmployees
+}
 export async function getServices() {
   return data.servicesHome
 }

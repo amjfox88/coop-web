@@ -15,7 +15,6 @@ export default async function handle(req, res) {
   })
 
   try {
-    console.log(numberEmployees);
     await transporter.sendMail({
       from: companyEmail,
       to: 'noreply@coophealth.es',

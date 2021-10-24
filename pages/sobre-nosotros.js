@@ -6,6 +6,7 @@ import BannerCta from "../components/banner-cta/banner-cta";
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Head from "next/head";
+import {getAllEmployees} from "./api/dataProvider";
 
 const CustomTab = ({ children, ...otherProps }) => (
     <Tab className="coopTab" {...otherProps}>
@@ -18,7 +19,7 @@ CustomTab.tabsRole = 'Tab';
 resetIdCounter();
 
 
-export default function ComoFunciona() {
+export default function ComoFunciona({allEmployees}) {
   return (
       <>
         <Head>
@@ -35,37 +36,27 @@ export default function ComoFunciona() {
         <section className="titleContent blueContent">
           <Tabs className="tabs" selectedTabClassName="selected">
             <TabList className="tabList">
-              <CustomTab>Leadership</CustomTab>
-              <CustomTab>Comité Científico</CustomTab>
-              <CustomTab>Especialistas</CustomTab>
+              {allEmployees.map((type) => {
+                return (
+                    <CustomTab key={type}>{type.type}</CustomTab>
+                )
+              })
+              }
             </TabList>
-
-            <TabPanel>
-              <ul className={styles.teamGrid}>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-              </ul>
-            </TabPanel>
-            <TabPanel>
-              <ul className={styles.teamGrid}>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-              </ul>
-            </TabPanel>
-            <TabPanel>
-              <ul className={styles.teamGrid}>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-                <li><CardDescription linkedin={'/'} name={"Luis Galán"} position={"CEO - Founder"}/></li>
-              </ul>
-            </TabPanel>
+            {allEmployees.map((team, index) => {
+              return (
+                  <TabPanel key={index}>
+                    <ul className={styles.teamGrid}>
+                      {team.employees.map((emp) => {
+                        return (
+                            <li key={emp}><CardDescription linkedin={emp.linkedin} name={emp.name} position={emp.position} image={emp.img}/></li>
+                        )
+                      })}
+                    </ul>
+                  </TabPanel>
+              )
+            })
+            }
           </Tabs>
         </section>
         <section>
@@ -77,4 +68,14 @@ export default function ComoFunciona() {
         </section>
       </>
   )
+}
+
+export async function getStaticProps() {
+  const allEmployees = await getAllEmployees();
+
+  return {
+    props: {
+      allEmployees,
+    }
+  }
 }

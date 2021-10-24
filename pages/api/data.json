@@ -1,26 +1,41 @@
 {
-  "employees": [
+  "employees": [],
+  "allEmployees": [
     {
-      "name": "Nombre del experto1",
-      "position": "Cargo o aporte a la empresa",
-      "image": "/images/Communication.svg"
-    },
-    {
-      "name": "Nombre del experto2",
-      "position": "Cargo o aporte a la empresa",
-      "image": "/images/Communication.svg"
-    },
-    {
-      "name": "Nombre del experto3",
-      "position": "Cargo o aporte a la empresa",
-      "image": "/images/Communication.svg"
-    },
-    {
-      "name": "Nombre del experto4",
-      "position": "Cargo o aporte a la empresa",
-      "image": "/images/Communication.svg"
+      "type": "Leadership",
+        "employees": [
+          {
+            "name": "Luis Galán",
+            "position": "CEO - Founder",
+            "img": "/images/luis-galan.png",
+            "linkedin": "https://www.linkedin.com/in/luis-%C3%A1ngel-gal%C3%A1n-de-miguel-10b71414a/"
+          },
+          {
+            "name": "Manuel Palencia",
+            "position": "Chief Wellness Officer - Founder",
+            "img": "/images/manuel-palencia.png",
+            "linkedin": "https://www.linkedin.com/in/manuel-palencia-alejandro-5a767464/"
+          },
+          {
+            "name": "José Manuel Núñez",
+            "position": "CMO & Business Development",
+            "img": "",
+            "linkedin": ""
+          },
+          {
+            "name": "Daniel Palencia",
+            "position": "Chief Compliance Officer",
+            "img": "/images/daniel-palencia.png",
+            "linkedin": "https://www.linkedin.com/in/daniel-palencia-l%C3%B3pez-cissp-cism-crisc-cisa-a6633929/"
+          },
+          {
+            "name": "Carlos Garrido",
+            "position": "Chief Experience Officer",
+            "img": "/images/carlos-garrido.png",
+            "linkedin": "https://www.linkedin.com/in/carlosgarridodesigner/"
+          }
+        ]
     }
-
   ],
   "servicesHome": [
     {

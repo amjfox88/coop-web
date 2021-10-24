@@ -155,9 +155,12 @@ ul {
 }
 
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {
-  .titleContent.blueContent {
-    /*padding: 120px 40px;*/
+@media (max-width: 1024px) {
+  body {
+    padding: 0 50px;
+  }
+  .titleContent, .titleContentImage {
+    padding: 120px 0;
   }
 }
 /* ------ */

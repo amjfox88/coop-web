@@ -1,6 +1,6 @@
 .postsList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 25%));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: flex-start;
   grid-gap: 20px;

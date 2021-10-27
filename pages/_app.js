@@ -11,6 +11,7 @@ export default function App({Component, pageProps}) {
           <title>Coop</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
           <link rel="icon" href="/favicon.ico"/>
+          <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32"/>
           <meta name="title" content="El nuevo paradigma de la salud corporativa"/>
           <meta name="description"
                 content="Coop es la herramienta que acompaña a los empleados en la mejora de su rendimiento cognitivo y físico a través de Inteligencia Artificial."/>

@@ -25,7 +25,7 @@ export default function ComoFunciona({allEmployees}) {
         <Head>
           <title>Coop - Sobre Nosotros</title>
         </Head>
-        <Banner title={"Experiencia y conocimiento con propósito"} backImage={"/images/banner-sobre-nosotros.jpg"} cta={{url: '/solicita-demo', text: 'Únete al equipo'}} />
+        <Banner title={"Experiencia y conocimiento con propósito"} backImage={"/images/banner-sobre-nosotros.jpg"} cta={{url: '/contacto', text: 'Únete al equipo'}} />
         <section className="titleContent center">
           <Fade bottom cascade>
             <h2>Un equipo multidisciplinar comprometido con el bienestar y la salud corporativa</h2>

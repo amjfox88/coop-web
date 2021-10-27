@@ -8,6 +8,7 @@ import Fade from "react-reveal/Fade";
 import Image from 'next/image'
 import Link from "next/link";
 import {getEmployees, getServices} from './api/dataProvider';
+import imgBanner from '/public/images/banner-home.jpg'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/swiper-bundle.css';
@@ -19,7 +20,7 @@ function Home({services, employees}) {
         <Head>
           <title>Coop</title>
         </Head>
-        <Banner title={"Healthy people, better humans"} backImage={"/images/banner-home.jpg"}
+        <Banner title={"Healthy people, better humans"} backImage={imgBanner.src}
                 cta={{url: '/solicita-demo', text: 'Solicita una demo'}}/>
         <section className="titleContent center">
           <Fade bottom>

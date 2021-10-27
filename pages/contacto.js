@@ -23,10 +23,7 @@ export default function Contacto() {
             </Link>
             <h5>Prensa</h5>
             <p>Nuestro equipo de comunicación te responderá todas las dudas que tengas sobre nuestra plataforma en los medios.</p>
-            <Link href={{
-              pathname: '/blog/[slug]',
-              query: { slug: 'my-post' },
-            }}>
+            <Link href="mailto:prensa@coophealth.es">
               <a>prensa@coophealth.es</a>
             </Link>
           </div>

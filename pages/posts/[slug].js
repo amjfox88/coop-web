@@ -67,6 +67,7 @@ export async function getServerSideProps(context) {
   }
 }
 
+/*
 export async function getStaticPaths() {
   const allPosts = await getAllPostsWithSlug();
   let paths = allPosts.nodes.map(node => ({
@@ -76,4 +77,4 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   }
-}
+}*/

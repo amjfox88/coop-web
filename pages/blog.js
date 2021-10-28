@@ -67,8 +67,7 @@ export async function getServerSideProps() {
   const posts = await getPostAndNews('publicaciones');
 
   return {
-    props: {news, posts},
-    revalidate: 10,
+    props: {news, posts}
   }
 }
 

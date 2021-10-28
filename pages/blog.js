@@ -62,7 +62,7 @@ function Blog({news, posts}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const news = await getPostAndNews('noticias');
   const posts = await getPostAndNews('publicaciones');
 

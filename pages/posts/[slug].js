@@ -48,7 +48,7 @@ export default function Post({post, siblingsPosts}) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const post = await getSinglePost(context);
   const allPosts = await getAllPostsWithSlug();
   const slugIndex = allPosts.nodes.findIndex((item) => {

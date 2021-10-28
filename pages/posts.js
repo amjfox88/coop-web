@@ -39,7 +39,7 @@ export default function Posts({allPosts}) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // See API to know how to fetch paginated posts
   const allPosts = await getAllPosts();
 
